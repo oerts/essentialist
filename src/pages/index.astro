@@ -11,26 +11,26 @@ const fullName = persona.firstName + " " + persona.secondName;
 ---
 
 <Layout title={fullName} desc={persona.description}>
-  <Header title={fullName} description={persona.description} />
-  <Story story={persona.story} />
-  <Section>
-    <SectionTitle title="Books" />
-    <List>
-      {
-        persona.sections.books.map((e) => (
-          <ListItem title={e.title} desc={e.desc} url={e.url} />
-        ))
-      }
-    </List>
-  </Section>
-  <Section>
-    <SectionTitle title="Experience" />
-    <List>
-      {
-        persona.sections.experience.map((e) => (
-          <ListItem title={e.title} desc={e.desc} url={e.url} />
-        ))
-      }
-    </List>
-  </Section>
+    <Header title={fullName} description={persona.description} />
+    <Story story={persona.story} />
+    <Section>
+        <SectionTitle title="Talks" />
+        <List>
+            {
+                persona.sections.talks.map((e) => (
+                    <ListItem title={e.title} desc={e.desc} url={e.url} />
+                ))
+            }
+        </List>
+    </Section>
+    <Section>
+        <SectionTitle title="Experience" />
+        <List>
+            {
+                persona.sections.experience.map((e) => (
+                    <ListItem title={e.title} desc={e.desc} url={e.url} />
+                ))
+            }
+        </List>
+    </Section>
 </Layout>
