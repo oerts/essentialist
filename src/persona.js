@@ -2,7 +2,7 @@ export const persona = {
     firstName: "Oguzhan",
     secondName: "Ertas",
     description: "Bender of Cascading Style Sheets, research addict",
-    email: "howdy@ertas.dev",
+    email: "hey@ertas.dev",
     story:
       "Hello! I'm Oz. Passionate UI developer driven by curiosity and a thirst for learning.",
   sections: {
